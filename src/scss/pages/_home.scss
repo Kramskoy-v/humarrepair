@@ -1,0 +1,27 @@
+.page-home {
+
+  .slider {
+    .container {
+      max-width: 1920px;
+      min-height: 300px;
+      padding: 0;
+      position: relative;
+    }
+
+
+    &__content {
+      position: absolute;
+      z-index: 5;
+    }
+
+    &__word {}
+
+    &__wrapper {}
+
+    &__socials {}
+
+    &__socials-link {}
+
+  }
+
+}
