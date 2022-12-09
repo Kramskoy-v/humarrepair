@@ -1,4 +1,4 @@
-import IMask from 'imask';
+/* import IMask from 'imask';
 
 const initMasks = () => {
   const inputsNumMask = document.querySelectorAll('.number-mask');
@@ -24,3 +24,4 @@ export {
   initMasks
 }
 
+ */

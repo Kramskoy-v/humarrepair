@@ -150,10 +150,9 @@
     &__list {
       max-width: 325px;
       padding-top: 10px;
+
       li {
         padding-left: 20px;
-        font-size: 18px;
-        line-height: 26px;
         font-weight: 300;
         position: relative;
 
@@ -164,12 +163,15 @@
 
         &:not(:last-child) {
           margin-bottom: 10px;
+
           &::before {
             content: '\2013';
           }
         }
+
         &:last-child {
           margin-top: 35px;
+
           &::before {
             content: '\2026';
           }
@@ -177,13 +179,260 @@
       }
     }
   }
+
   .services {
     .container {
-      padding-top: 70px;
+      padding-top: 58px;
+      padding-bottom: 92px;
+      color: $newblack;
+    }
+
+    &__row {
+      display: flex;
+    }
+
+    &__col-left {
+      max-width: 355px;
+      margin-right: 50px;
+      padding-left: 18px;
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+        text-align: right;
+      }
+
+      a {
+        font-weight: 700;
+        text-decoration: underline;
+        color: $newblack;
+      }
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 65px;
+      line-height: 80px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    &__col-right {
+      max-width: 700px;
+      padding-top: 90px;
+
+      >p {
+        margin-bottom: 25px;
+        font-weight: 300;
+
+      }
+    }
+
+    &__subtitle {
+      font-size: 30px;
+      line-height: 80px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    &__address {
+      margin-bottom: 22px;
+      font-weight: 300;
+      text-transform: none;
+
+      &.mb3 {
+        margin-bottom: 35px;
+      }
+
+      span {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+    }
+
+    &__list {
+      margin-bottom: 22px;
+
+      li {
+        padding-left: 20px;
+        font-weight: 300;
+        position: relative;
+
+        &::before {
+          content: '\2013';
+          position: absolute;
+          left: 0;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__price {
+
+      p {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 300;
+
+      }
+
+      span {
+        font-weight: 700;
+
+      }
     }
   }
- 
-  
+
+  .employees {
+    .container {
+      color: $newblack;
+      padding-bottom: 44px;
+    }
+
+    &__title {
+      margin-bottom: 47px;
+      font-size: 65px;
+      line-height: 80px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      
+
+      li {
+        display: flex;
+        max-width: 560px;
+        margin-bottom: 40px;
+        &:nth-child(odd) {
+          margin-right: 40px;
+        }
+      }
+    }
+
+    &__image {
+      min-width: 140px;
+      min-height: 140px;
+      width: 140px;
+      height: 140px;
+      margin-right: 38px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    &__info {
+      padding-top: 7px;
+
+      >a {
+        line-height: 40px;
+        font-weight: 300;
+        color: $newblack;
+        border-bottom: 1px solid $newblack;
+        font-family: 'Gotham Pro';
+      }
+    }
+
+    &__name,
+    &__phone {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 700;
+      color: $newblack;
+    }
+
+    &__name {
+      margin-bottom: 11px;
+    }
+
+    &__phone {
+      margin-right: 18px;
+      white-space: nowrap;
+      min-width: 295px;
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+    }
+
+    &__socials {
+      height: 32px;
+      transition: all .3s;
+      &:not(:last-child) {
+        margin-right: 8px;
+     }
+     &:hover {
+      opacity: .6;
+    }
+    }
+
+    &__description {
+      max-width: 285px;
+      margin: -6px 0 10px;
+      font-weight: 300;
+    }
+  }
+
+  .information {
+    background-color: $newblack;
+    color: $white;
+    .container {
+      padding-top: 72px;
+      padding-bottom: 85px;
+      display: flex;
+    }
+		&__col-left {
+      max-width: 354px;
+      margin-right: 54px;
+      text-align: right;
+
+		}
+
+		&__top {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      >p {
+        font-weight: 300;
+      }
+      strong {
+        font-weight: 700;
+      }
+		}
+
+		&__bottom {
+		}
+
+		&__subtitle-bg {
+		}
+
+		&__col-right {
+		}
+
+		&__title {
+		}
+
+		&__body-parts {
+		}
+
+		&__subtitle-light {
+		}
+
+		&__list {
+		}
+
+		&__body-parts-wrapper {
+		}
+}
+
+
 
 
 }
