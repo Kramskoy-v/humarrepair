@@ -4,12 +4,10 @@ import { Swiper } from "swiper/bundle";
 
 const newSwiper = new Swiper('.slider-main', {
 
- // noSwiping: true,
-  //noSwipingClass: 'swiper-no-swiping',
   effect: "fade",
   loop: true,
-/*   autoplay: {
+   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  }, */
+  },
 });

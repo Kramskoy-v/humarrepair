@@ -1,3 +1,3 @@
-//import './components/iMask'
 import './components/slider'
+import './components/mobileMenu'
 
