@@ -75,11 +75,10 @@ textarea {
 }
 
 .breadcrumbs {
-  margin-bottom: 38px;
-
   .container {
     display: flex;
     padding-top: 34px;
+    padding-bottom: 38px;
     font-size: 14px;
     line-height: 22px;
     font-weight: 300;
@@ -90,6 +89,7 @@ textarea {
       color: $newgrey;
       text-decoration: underline;
       transition: all .3s;
+
       &:hover {
         color: $newblack;
       }
@@ -102,15 +102,32 @@ textarea {
         margin: 0 15px;
       }
     }
+
+    @media (max-width: 992px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
+
 }
 
 .navigation {
   &__links {
     margin-bottom: 70px;
+
     .container {
       display: flex;
       justify-content: space-between;
+
+
+      @media (max-width: 768px) {
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
     }
   }
 
@@ -123,27 +140,70 @@ textarea {
     color: $newblack;
     transition: all .3s;
     position: relative;
+
     &:hover {
       opacity: .6;
-    
+    }
+
+    span {
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__link-title-contents {
+    @media (max-width: 768px) {
+      margin: 0;
     }
   }
 
   &__link-prev {
     padding-left: 20px;
+
+    @media (max-width: 768px) {
+      border: 1px solid $newgrey;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      padding-left: 0;
+    }
+
     &::before {
       content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7.28253 14L9 12.3492L3.43493 7L9 1.65083L7.28253 6.26983e-07L-3.69967e-06 7L7.28253 14Z' fill='black'/%3e%3c/svg%3e ");
       position: absolute;
       left: 0;
+
+      @media (max-width: 768px) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
     }
   }
 
   &__link-next {
     padding-right: 20px;
+
+    @media (max-width: 768px) {
+      border: 1px solid $newgrey;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      padding-right: 0;
+    }
+
     &::after {
       content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='9' height='14' viewBox='0 0 9 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.71747 7.77128e-07L-2.88641e-07 1.65083L5.56507 7L-2.1592e-06 12.3492L1.71746 14L9 7L1.71747 7.77128e-07Z' fill='black'/%3e%3c/svg%3e ");
       position: absolute;
       right: 0;
+
+      @media (max-width: 768px) {
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
     }
   }
 }

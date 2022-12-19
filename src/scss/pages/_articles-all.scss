@@ -13,13 +13,14 @@
         }
 
         &__title {
-            margin-bottom: 38px;
-            margin-left: -115px;
+            max-width: 873px;
+            margin: 0 0 38px auto;
+            //margin-left: -115px;
             font-size: 112px;
             line-height: 132px;
             font-weight: 900;
             text-transform: uppercase;
-            text-align: center;
+            //text-align: center;
         }
 
         &__left {
