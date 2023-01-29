@@ -78,11 +78,13 @@ textarea {
   .container {
     display: flex;
     padding-top: 34px;
-    padding-bottom: 38px;
+    padding-bottom: 24px;
+    color: $newgrey;
+    font-family: 'Open Sans';
     font-size: 14px;
     line-height: 22px;
-    font-weight: 300;
-    color: $newgrey;
+    font-weight: 400;
+    text-decoration: none;
 
     a {
       display: block;
@@ -99,7 +101,7 @@ textarea {
       display: block;
 
       &:not(:last-child) {
-        margin: 0 15px;
+        margin: 0 10px;
       }
     }
 

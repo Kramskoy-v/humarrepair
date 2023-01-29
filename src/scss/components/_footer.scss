@@ -1,16 +1,16 @@
 .footer {
-    border-top: 1px solid #cfd0d1;
-    .container {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    p {
-        max-width: 1120px;
-        font-family: 'Open Sans';
-        font-size: 13px;
-        line-height: 22px;
-        font-weight: 400;
-        color: #7e8183;
-        text-align: justify;
-    }
+  border-top: 1px solid #cfd0d1;
+
+  .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  p {
+    @include open-sans;
+    color: #7e8183;
+    font-size: 14px;
+    line-height: 22px;
+
+  }
 }
