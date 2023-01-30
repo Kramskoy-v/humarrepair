@@ -4,7 +4,7 @@
   .information {
     .container {
       padding-top: 50px;
-      padding-bottom: 50px;
+      padding-bottom: 60px;
     }
 
     &__content {
@@ -73,7 +73,7 @@
       font-weight: 700;
       color: $white;
       background-color: $newblack;
-         }
+    }
 
     &__link {
       font-family: 'Open Sans';
@@ -83,11 +83,98 @@
       font-weight: 700;
       text-decoration: underline;
       transition: all .3s;
+
       &:hover {
         color: $newgrey;
       }
     }
   }
 
+  .reviews {
+    .container {
+      padding-bottom: 40px;
+    }
+
+    &__list {
+      margin: 0 -27.5px 0;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        min-width: 350px;
+        width: 350px;
+        display: flex;
+        margin: 0 27.5px 30px;
+        box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &__phone-bg {
+      width: 546px;
+      height: 843px;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      z-index: 100;
+      display: none;
+
+      &._active {
+        display: block;
+      }
+    }
+
+  }
+
+  .fslightbox-toolbar-button.fslightbox-flex-centered {
+    &:first-child {
+      display: none;
+    }
+  }
+
+  .fslightbox-nav {
+    top: 15%;
+  }
+
+  .fslightbox-toolbar {
+    right: 30%;
+  }
+
+  .fslightbox-slide-number-container {
+    display: none;
+  }
+
+  .fslightbox-container {
+    z-index: 99 !important;
+  }
+  .fslightbox-slide-btn-container-next {
+    right: 10%;
+  }
+  .fslightbox-slide-btn-container-previous {
+    left: 10%;
+  }
+  .fslightbox-absoluted.fslightbox-full-dimension.fslightbox-flex-centered {
+    align-items: flex-end;
+
+    > div {
+      height: 730px !important;
+      overflow-y: auto;
+
+      img {
+        width: 460px !important;
+        height: max-content !important;
+      }
+    }
+  }
+
+  .fslightbox-toolbar-button {
+    svg {
+      pointer-events: none;
+    }
+  }
 
 }

@@ -1,6 +1,8 @@
 .header {
   border-bottom: 2px solid $otherblack;
-  .container {
+
+  > .container {
+    margin-top: 65px;
     padding-top: 35px;
     padding-bottom: 30px;
     display: flex;
@@ -34,6 +36,7 @@
     line-height: 32px;
     font-weight: 700;
     color: $light-black;
+
     span {
       display: block;
       font-size: 16px;
@@ -52,14 +55,16 @@
       top: 0;
     }
   }
+
   &__language {
     margin-right: 60px;
     display: flex;
     align-items: center;
 
   }
+
   &__language-item {
-   line-height: 30px;
+    line-height: 30px;
     font-weight: 700;
     text-decoration: underline;
     cursor: pointer;
@@ -91,11 +96,11 @@
   }
 
 
-
   &__socials {
     display: flex;
+
     svg {
-     width: 100%;
+      width: 100%;
       height: 100%;
     }
   }
@@ -117,11 +122,20 @@
 }
 
 .menu {
-  margin-top: 3px;
-  padding: 9px 0 14px;
+  width: 100%;
+  position: fixed;
+  top: 3px;
+  padding: 8px 0;
   background-color: #3c4144;
+  z-index: 10;
+
+  > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   &__list {
-    max-width: 1920px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -133,8 +147,11 @@
       }
 
       &._active {
-          border-bottom: 2px  solid $white;
+
+
         a {
+          padding-bottom: 2px;
+          border-bottom: 2px solid $white;
           pointer-events: none;
           font-weight: 700;
         }
@@ -143,9 +160,42 @@
 
     a {
       line-height: 30px;
-
       color: $white;
       transition: all .3s;
+    }
+  }
+
+  &__socials {
+    height: max-content;
+    display: flex;
+    visibility: hidden;
+
+    &._visible {
+      visibility: visible;
+    }
+  }
+
+  &__socials-link {
+    display: flex;
+    width: 31px;
+    height: 31px;
+
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+
+    svg {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__logo-link-mini {
+    height: 39px;
+    visibility: hidden;
+
+    &._visible {
+      visibility: visible;
     }
   }
 }
@@ -171,9 +221,6 @@
 }
 
 @media(max-width: 1220px) {
-  .menu {
-    margin-right: 0;
-  }
 
   .header__mobile-wrapper {
     flex-direction: column-reverse;
@@ -190,7 +237,7 @@
 }
 
 @media(max-width: 992px) {
-  .header .container {
+  .header > .container {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -214,7 +261,7 @@
 }
 
 @media(max-width: 768px) {
-  .header .container {
+  .header > .container {
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -240,6 +287,8 @@
 
   .menu-hamburger {
     display: block;
+    position: relative;
+    z-index: 15;
 
     &:active {
       transform: scale(.9);
