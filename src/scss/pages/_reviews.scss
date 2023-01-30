@@ -1,0 +1,93 @@
+.page-reviews {
+  color: $newblack;
+
+  .information {
+    .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &__content {
+      display: flex;
+      justify-content: end;
+    }
+
+    &__title {
+      max-width: 935px;
+      margin: 0 0 7px auto;
+      font-size: 110px;
+      line-height: 132px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    &__left {
+      margin-right: 48px;
+      text-align: right;
+    }
+
+    &__description {
+      max-width: 656px;
+      margin-bottom: 15px;
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: 300;
+    }
+
+    &__socials {
+      display: flex;
+      justify-content: end;
+      padding-right: 5px;
+    }
+
+    &__socials-link {
+      width: 53px;
+      height: 53px;
+      display: block;
+      transition: all .3s;
+
+      &:not(:last-child) {
+        margin-right: 11px;
+      }
+
+      &:hover {
+        opacity: .6;
+      }
+    }
+
+    &__right {
+      max-width: 350px;
+      padding-top: 17px;
+
+      > p {
+        @include open-sans;
+      }
+    }
+
+    &__subtitle {
+      max-width: max-content;
+      margin-bottom: 25px;
+      padding: 12px 18px;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      color: $white;
+      background-color: $newblack;
+         }
+
+    &__link {
+      font-family: 'Open Sans';
+      font-size: 16px;
+      line-height: 24px;
+      color: #040000;
+      font-weight: 700;
+      text-decoration: underline;
+      transition: all .3s;
+      &:hover {
+        color: $newgrey;
+      }
+    }
+  }
+
+
+}
