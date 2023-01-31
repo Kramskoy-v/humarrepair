@@ -21,9 +21,7 @@
     font-size: 80px;
     line-height: 90px;
   }
-  .page-home .priority .container {
-    padding: 0;
-  }
+
   .page-home .priority__inner {
     position: relative;
     padding-top: 140px;
@@ -103,7 +101,7 @@
   .page-home .information__body-parts-wrapper ul,
   .page-home .information__body-parts-wrapper p,
   .page-home .information__bottom > p,
-  .page-home .post-scriptum__text p{
+  .page-home .post-scriptum__text p {
     font-size: 14px;
     line-height: 21px;
   }
@@ -192,90 +190,141 @@
 }
 
 @media(max-width: 768px) {
+  .header > .container {
+    margin-top: 0;
+  }
+  section .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .page-home .slider__content {
+    flex-direction: column;
+
+  }
+  .page-home .slider__wrapper {
+    width: 100%;
+  }
+  .page-home .slider__word {
+    font-size: 144px;
+    line-height: 201px;
+    margin-right: 0;
+    margin-left: -9px;
+  }
+  .page-home .slider__text {
+    font-size: 31.4px;
+    line-height: 55px;
+  }
+
   .page-home .about .container {
     padding-top: 30px;
   }
 
-  .page-home .about__title {
-    margin-bottom: 20px;
-    font-size: 50px;
+  .page-home .about__title,
+  .page-home .priority__title,
+  .page-home .services__title,
+  .page-home .information__title,
+  .page-home .about__title,
+  .page-home .employees__title{
+    font-size: 45px;
+    line-height: 50px;
+    padding-left: 0;
+    word-break: break-word;
+  }
+  .page-home .about__row {
+    flex-direction: column;
   }
 
   .page-home .about__subtitle {
-    margin-right: 20px;
-    font-size: 26px;
-    line-height: 39px;
+    margin-right: 0;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: left;
   }
-
-  .page-home .priority__title {
-    font-size: 45px;
-  }
-
-
-  .page-home .priority__subtitle,
-  .page-home .services__title,
-  .page-home .employees__title,
-  .page-home .information__title {
-    font-size: 35px;
-    line-height: 45px;
-  }
-
-  .page-home .services__col-left {
-    margin-right: 20px;
-    padding-left: 0;
-  }
-
-  .page-home .services__col-right {
-    padding-top: 64px;
-  }
-
-  .page-home .services__subtitle {
-    font-size: 24px;
-    line-height: 50px;
-  }
-
-  .page-home .employees__name,
-  .page-home .employees__phone {
-    min-width: 250px;
-    font-size: 24px;
+  .page-home .about__warning {
+    font-size: 20px;
     line-height: 30px;
   }
 
-  .page-home .employees__image,
-  .page-home .employees__socials:first-child,
-  .page-home .information__col-left,
-  .page-home .post-scriptum__title {
-    margin-right: 20px;
+  .page-home .about__description p, .page-home .services__col-right > p, .page-home .employees__description,
+  .page-home .information__top > p, .page-home .information__col-right p, .page-home .information__col-right li,
+  .page-home .information__body-parts-wrapper ul, .page-home .information__body-parts-wrapper p, .page-home .information__bottom > p,
+  .page-home .post-scriptum__text p,
+  .page-home .priority__list li,
+  .page-home .services__col-left p,
+  .page-home .services__addresses,
+  .page-home .services__price p{
+    font-size: 13px;
+    line-height: 18px;
   }
 
-  .page-home .information__col-left {
+  .page-home .priority__inner {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .page-home .priority__title-wrapper p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: left;
+  }
+  .page-home .services__col-left {
+    padding-left: 0;
+  }
+
+  .page-home .services__col-right .services__title {
+    max-width: 80%;
+  }
+
+  .page-home .services__subtitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .page-home .services__price h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .page-home .employees__list li {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .page-home .employees__image {
+    min-width: 130px;
+    min-height: 130px;
+    width: 130px;
+    height: 130px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .page-home .employees__name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .page-home .information .container {
+    padding-bottom: 300px;
+  }
+  .page-home .post-scriptum .container {
     padding-top: 0;
   }
-
-  .page-home .information__subtitle-bg {
-    font-size: 19px;
+  .page-home .post-scriptum__title {
+    font-size: 110px;
+    line-height: 216px;
   }
+
+
+
+
 }
 
+
+
+
+/*
+
 @media(max-width: 576px) {
-  .page-home .slider .swiper-slide img {
-    height: 320px;
-  }
 
-  .page-home .slider__content {
-    bottom: 30px;
-    align-items: flex-start;
-  }
-
-  .page-home .slider__word {
-    margin-right: 15px;
-    font-size: 70px;
-    line-height: 70px;
-  }
-
-  .page-home .slider__text {
-    font-size: 30px;
-  }
 
   .page-home .about__title {
     font-size: 35px;
@@ -340,8 +389,6 @@
 
 
 @media(max-width: 400px) {
-
-
   .page-home .slider__content {
     flex-direction: column;
     left: 10px;
@@ -379,3 +426,4 @@
     margin-bottom: 10px;
   }
 }
+*/

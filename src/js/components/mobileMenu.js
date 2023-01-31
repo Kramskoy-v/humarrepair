@@ -1,15 +1,18 @@
 // menu mobile
 const hamburger = document.querySelector('.menu-hamburger');
 const closeMenu = document.querySelector('.menu-close');
-const mobileMenu = document.querySelector('.header__mobile-wrapper');
+const menu = document.querySelector('.menu')
+const mobileWrapper = document.querySelector('.header__mobile-wrapper');
 
 hamburger.addEventListener('click', () => {
-  mobileMenu.classList.add('_active');
+  menu.classList.add('_active');
+  mobileWrapper.classList.add('_show');
   document.body.style.overflow = 'hidden'
 })
 
 closeMenu.addEventListener('click', () => {
-  mobileMenu.classList.remove('_active');
+  menu.classList.remove('_active');
+  mobileWrapper.classList.remove('_show');
   document.body.style.overflow = ''
 })
 

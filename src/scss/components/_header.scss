@@ -50,11 +50,7 @@
     height: max-content;
     padding-top: 15px;
     display: flex;
-    transition: all .7s;
-
-    &._active {
-      top: 0;
-    }
+    transition: all .3s;
   }
 
   &__language {
@@ -223,7 +219,7 @@
 }
 
 @media(max-width: 1220px) {
- .header__item {
+  .header__item {
     display: flex;
     justify-content: end;
   }
@@ -248,14 +244,15 @@
     height: 37px;
   }
 
- .header__logo-title {
+  .header__logo-title {
     font-size: 24px;
     line-height: 29px;
-  span {
-   font-size: 14px;
-    line-height: 22px;
 
-  }
+    span {
+      font-size: 14px;
+      line-height: 22px;
+
+    }
   }
 
   .header__logo-link {
@@ -272,44 +269,86 @@
 }
 
 @media(max-width: 768px) {
-  .header > .container {
-    padding-right: 10px;
-    padding-left: 10px;
+  .menu__logo-link-mini,
+  .menu__socials {
+    display: none;
+  }
+  .header__logo {
+    margin-right: 10px;
+  }
+  .header__logo-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .header__logo-title span {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .header__logo-link {
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .menu {
+    transform: translateX(-200%);
+    transition: all .3s;
   }
 
   .header__mobile-wrapper {
-    margin: 0;
-    padding: 40px 20px;
-    position: fixed;
-    left: 0;
-    top: -150%;
-    z-index: 10;
-    width: 100%;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #fff;
+    position: absolute;
+    z-index: 20;
+    transform: translateX(-200%);
+  }
+  .header__language {
+    margin-bottom: 25px;
   }
 
-  .menu-close {
-    display: block;
+  .menu > .container {
+    height: 100vh;
+  }
+  .header__language {
+    color: $white;
+  }
+  .header__language-item._active {
+    color: $newgrey;
+  }
+  .header__socials-link {
+    svg {
+      circle {
+        stroke: $white;
+      }
 
+      path {
+        fill: white;
+      }
+    }
+  }
+  .menu._active {
+    transition: all .3s;
+    transform: translateX(0);
+  }
+  .header__mobile-wrapper._show {
+    transform: translateX(0);
   }
 
   .menu-hamburger {
     display: block;
-    position: relative;
-    z-index: 15;
 
     &:active {
       transform: scale(.9);
     }
   }
+  .menu-close {
+    display: block;
 
-  .menu {
-    margin: 0 auto 20px;
+    svg {
+      path {
+        fill: white;
+      }
+    }
   }
-
   .menu__list {
     flex-direction: column;
     justify-content: center;
