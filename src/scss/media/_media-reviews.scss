@@ -1,0 +1,101 @@
+@media (max-width: 1200px) {
+  .page-reviews .reviews__list {
+    justify-content: center;
+  }
+  .page-reviews .col.right-col  {
+    display: none;
+  }
+
+  .page-reviews .reviews__list a,
+  .page-reviews .reviews__list a img{
+    pointer-events: none;
+  }
+  .page-reviews .information__title {
+    font-size: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .page-reviews .information .container {
+    padding-bottom: 30px;
+  }
+  .page-reviews .reviews__list a {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .page-reviews .information__title {
+    font-size: 65px;
+    line-height: 70px;
+    text-align: right;
+  }
+  .page-reviews .information__content {
+    flex-direction: column;
+  }
+  .page-reviews .information__description {
+    max-width: 100%;
+    margin-right: 0;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .page-reviews .information__left {
+    margin-right: 0;
+  }
+  .page-reviews .information__right {
+    max-width: 100%;
+  }
+
+  .page-reviews .information__subtitle {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .page-reviews .information__right > p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .page-reviews .information__socials-link,
+  .page-reviews .information__socials-link svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .page-reviews .reviews__list {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-reviews .reviews__list a {
+    min-width: 70%;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+   }
+  .page-reviews .information__title {
+    font-size: 45px;
+    line-height: 70px;
+  }
+
+  .page-reviews .information__description {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .page-reviews .information__subtitle {
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .page-reviews .information__right > p,
+  .page-reviews .information__link{
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+
+  .page-reviews .information__socials-link,
+  .page-reviews .information__socials-link svg {
+    width: 37px;
+    height: 37px;
+  }
+
+}
