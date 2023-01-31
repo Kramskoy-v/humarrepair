@@ -134,15 +134,10 @@
       color: $white;
     }
 
-    &__title {
+    &__title-wrapper {
       margin-right: 50px;
-      font-size: 70px;
-      line-height: 80px;
-      font-weight: 900;
-      text-transform: uppercase;
 
-      span {
-        display: block;
+      p {
         margin-top: 17px;
         font-size: 50px;
         line-height: 60px;
@@ -150,6 +145,15 @@
         text-align: right;
         text-transform: none;
       }
+    }
+
+    &__title {
+
+      font-size: 70px;
+      line-height: 80px;
+      font-weight: 900;
+      text-transform: uppercase;
+
     }
 
     &__list {
@@ -418,8 +422,10 @@
 
     &__bottom {
       padding-left: 24px;
+
       > p {
         @include open-sans;
+
         &:first-of-type {
           margin-bottom: 45px;
 
@@ -501,7 +507,7 @@
         font-weight: 700;
       }
 
-      ul,p {
+      ul, p {
         margin-bottom: 24px;
       }
     }
@@ -530,7 +536,8 @@
 
       p {
         @include open-sans;
-        &:not(:last-child){
+
+        &:not(:last-child) {
           margin-bottom: 25px;
         }
       }
