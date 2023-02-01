@@ -6,10 +6,7 @@
     display: none;
   }
 
-  .page-reviews .reviews__list a,
-  .page-reviews .reviews__list a img{
-    pointer-events: none;
-  }
+
   .page-reviews .information__title {
     font-size: 100px;
   }
@@ -58,8 +55,16 @@
     width: 45px;
     height: 45px;
   }
+  .fslightbox-toolbar-button.fslightbox-flex-centered {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
+  .page-reviews .reviews__list a,
+  .page-reviews .reviews__list a img{
+    pointer-events: none;
+  }
+
   .page-reviews .reviews__list {
     margin: 0;
     flex-direction: column;

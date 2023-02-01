@@ -1,9 +1,6 @@
 if (window.innerWidth > 1200) {
-  require('fslightbox')
-
   const reviewsPhone = document.querySelector('.reviews__phone-bg')
   const galleryItems = document.querySelectorAll('[data-fslightbox="reviews-gallery"]>img')
-
 
   addEventListener('click', (e) => {
     const target = e.target
@@ -11,11 +8,14 @@ if (window.innerWidth > 1200) {
       if (target && target === item) {
         reviewsPhone.classList.add('_active')
       }
-      if (target.classList.contains('fslightbox-absoluted') || target.classList.contains('fslightbox-toolbar-button')) {
+      if (target.classList.contains('fslightbox-absoluted') || target.classList.contains(
+        'fslightbox-toolbar-button')) {
         reviewsPhone.classList.remove('_active')
       }
     })
 
   })
-
+}
+if (window.innerWidth > 768) {
+  require('fslightbox')
 }
