@@ -112,7 +112,7 @@
         }
       }
     }
-    }
+  }
 
   .fslightbox-toolbar-button.fslightbox-flex-centered {
     &:first-child {
@@ -154,10 +154,10 @@
       overflow-y: auto !important;;
       height: 730px;
       background-color: #000000;
+
       img {
         width: 460px !important;
-        height:max-content !important;
-        object-position: top;
+        height: max-content !important;
       }
     }
   }

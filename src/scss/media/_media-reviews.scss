@@ -113,3 +113,18 @@
     pointer-events: none;
   }
 }
+
+@media (max-height: 845px) {
+  .page-reviews .fslightbox-absoluted.fslightbox-full-dimension.fslightbox-flex-centered {
+    background-image: none;
+    align-items: center;
+  }
+  .page-reviews .fslightbox-absoluted.fslightbox-full-dimension.fslightbox-flex-centered > div {
+    background-color: transparent;
+    max-height: 100%;
+    height: max-content;
+
+
+  }
+
+}
