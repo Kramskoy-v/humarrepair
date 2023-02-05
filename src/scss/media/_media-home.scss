@@ -75,7 +75,7 @@
   }
 
   .page-home .slider__content {
-    bottom: 30px;
+    bottom: 42px;
   }
 
   .page-home .about__title,
@@ -169,10 +169,6 @@
     right: 40px;
   }
 
-  .page-home .main br {
-    display: none;
-  }
-
   .page-home .post-scriptum .container {
     flex-direction: column;
   }
@@ -202,28 +198,42 @@
   }
   .page-home .slider__wrapper {
     width: 100%;
+    padding-left: 10px;
   }
   .page-home .slider__word {
     font-size: 144px;
-    line-height: 201px;
+    line-height: 134px;
     margin-right: 0;
-    margin-left: -9px;
   }
   .page-home .slider__text {
+    margin-bottom: 7px;
     font-size: 31.4px;
     line-height: 55px;
   }
 
   .page-home .about .container {
     padding-top: 30px;
+    padding-bottom: 36px;
+  }
+  .page-home .slider__socials-link:not(:last-child) {
+    margin-right: 13px;
+  }
+  .page-home .about__title {
+    margin-bottom: 10px;
   }
 
+  .page-home .priority__title {
+    top: 30px;
+  }
+  .page-home .services__title {
+    margin-bottom: 10px;
+  }
   .page-home .about__title,
   .page-home .priority__title,
   .page-home .services__title,
   .page-home .information__title,
   .page-home .about__title,
-  .page-home .employees__title{
+  .page-home .employees__title {
     font-size: 45px;
     line-height: 50px;
     padding-left: 0;
@@ -233,17 +243,31 @@
     flex-direction: column;
   }
 
+  .page-home .about__description {
+    padding-top: 18px;
+  }
+
   .page-home .about__subtitle {
     margin-right: 0;
     font-size: 28px;
     line-height: 32px;
     text-align: left;
   }
+  .page-home .about__description p:first-of-type {
+    margin-bottom: 18px;
+  }
   .page-home .about__warning {
+    margin-bottom: 16px;
+    padding: 5px 13px;
     font-size: 20px;
     line-height: 30px;
   }
-
+  .page-home .priority__list li {
+    padding-left: 13px;
+  }
+  .page-home .priority__list li:not(:last-child) {
+    margin-bottom: 14px;
+  }
   .page-home .about__description p, .page-home .services__col-right > p, .page-home .employees__description,
   .page-home .information__top > p, .page-home .information__col-right p, .page-home .information__col-right li,
   .page-home .information__body-parts-wrapper ul, .page-home .information__body-parts-wrapper p, .page-home .information__bottom > p,
@@ -251,27 +275,35 @@
   .page-home .priority__list li,
   .page-home .services__col-left p,
   .page-home .services__addresses,
-  .page-home .services__price p{
+  .page-home .services__price p {
     font-size: 13px;
     line-height: 18px;
   }
 
   .page-home .priority__inner {
     flex-direction: column;
+    padding-top: 138px;
+    padding-bottom: 40px;
     padding-left: 0;
   }
 
   .page-home .priority__title-wrapper p {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 2px;
     font-size: 28px;
     line-height: 32px;
     text-align: left;
   }
+
+  .page-home .services .container {
+    padding-top: 30px;
+  }
   .page-home .services__col-left {
     padding-left: 0;
   }
-
+  .page-home .services__col-right {
+    padding-top: 17px;
+  }
   .page-home .services__col-right .services__title {
     max-width: 80%;
   }
