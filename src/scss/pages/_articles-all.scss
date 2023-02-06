@@ -22,13 +22,14 @@
     }
 
     &__left {
+      width: 755px;
       margin-right: 48px;
       text-align: right;
     }
 
     &__description {
       max-width: 656px;
-      margin-bottom: 15px;
+      margin: 0 0 15px auto;
       font-size: 50px;
       line-height: 60px;
       font-weight: 300;

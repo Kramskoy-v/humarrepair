@@ -14,7 +14,7 @@
       display: flex;
       left: 50%;
       transform: translateX(-53%);
-      bottom: 30px;
+      bottom: 20px;
       color: $white;
       align-items: center;
     }
@@ -69,18 +69,22 @@
 
   .about {
     .container {
-      padding-top: 44px;
-      padding-bottom: 78px;
+      padding-top: 50px;
+      padding-bottom: 54px;
       color: $newblack;
     }
 
     &__title {
-      margin-bottom: 26px;
+      margin-bottom: 30px;
       padding-left: 18px;
       font-size: 110px;
       line-height: 130px;
       font-weight: 900;
       text-transform: uppercase;
+
+      span {
+        display: none;
+      }
     }
 
     &__row {
@@ -98,14 +102,14 @@
     }
 
     &__description {
-      padding-top: 10px;
+      padding-top: 7px;
       max-width: 350px;
 
       p {
         @include open-sans;
 
         &:first-of-type {
-          margin-bottom: 27px;
+          margin-bottom: 23px;
         }
       }
 
@@ -116,7 +120,7 @@
 
     &__warning {
       max-width: max-content;
-      margin-bottom: 23px;
+      margin-bottom: 27px;
       padding: 10px 20px;
       font-size: 30px;
       line-height: 36px;
@@ -139,7 +143,7 @@
       margin-right: 50px;
 
       p {
-        margin-top: 17px;
+        margin-top: 14px;
         font-size: 50px;
         line-height: 60px;
         font-weight: 300;
@@ -149,12 +153,14 @@
     }
 
     &__title {
-
       font-size: 70px;
       line-height: 80px;
       font-weight: 900;
       text-transform: uppercase;
 
+      span {
+        display: none;
+      }
     }
 
     &__list {
@@ -162,7 +168,7 @@
       padding-top: 10px;
 
       li {
-        padding-left: 20px;
+        padding-left: 15px;
         @include open-sans;
         position: relative;
 
@@ -230,6 +236,9 @@
       font-weight: 900;
       letter-spacing: -0.01em;
       text-transform: uppercase;
+      span {
+        display: none;
+      }
     }
 
     &__col-right {
@@ -321,6 +330,11 @@
       line-height: 80px;
       font-weight: 900;
       text-transform: uppercase;
+
+      br,
+      span{
+        display: none;
+      }
     }
 
     &__list {
@@ -434,6 +448,10 @@
 
         &:last-of-type {
           font-weight: 700;
+
+          br {
+            display: none;
+          }
         }
       }
     }
@@ -471,6 +489,9 @@
       line-height: 80px;
       font-weight: 900;
       text-transform: uppercase;
+      span {
+        display: none;
+      }
     }
 
     &__subtitle-light {
@@ -479,6 +500,9 @@
       line-height: 40px;
       font-weight: 300;
 
+      br {
+        display: none;
+      }
     }
 
     &__list {
