@@ -233,7 +233,6 @@
   }
   .header__mobile-wrapper {
     flex-direction: column;
-    margin-right: 40px;
     padding-top: 0;
    }
 
@@ -332,7 +331,7 @@
     flex-direction: row;
     justify-content: space-between;
     position: absolute;
-    top: 120 px;
+    top: 120px;
     left: auto;
     z-index: 20;
     transform: translateX(-200%);

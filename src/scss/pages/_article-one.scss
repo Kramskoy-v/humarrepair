@@ -42,10 +42,13 @@
         line-height: 80px;
         font-weight: 900;
         text-transform: uppercase;
-
+        span {
+          display: none;
+        }
       }
 
       h3 {
+        max-width: 730px;
         margin-bottom: 22px;
         margin-left: -1px;
         font-size: 50px;
@@ -60,20 +63,32 @@
     }
 
     &__wrapper {
+      margin-bottom: 30px;
+
       p {
-        margin-bottom: 22px;
         font-family: 'Open Sans';
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
         color: $newblack;
+
+        &:first-of-type {
+          margin-bottom: 24px;
+        }
+
+        &:nth-of-type(1n + 2) {
+          margin-bottom: 24px;
+        }
+        &:last-of-type {
+          margin-bottom: 0;
+        }
       }
 
       strong {
         font-size: 18px;
         line-height: 26px;
         display: inline-block;
-        margin-bottom: 20px;
+        margin-bottom: 22px;
       }
 
       &._light {

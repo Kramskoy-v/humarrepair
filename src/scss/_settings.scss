@@ -69,9 +69,12 @@ textarea {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
 }
 
 .breadcrumbs {
@@ -106,8 +109,10 @@ textarea {
     }
 
     @media (max-width: 992px) {
-      padding-top: 20px;
-      padding-bottom: 20px;
+       padding-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      padding-top: 13px;
     }
   }
 
@@ -116,7 +121,9 @@ textarea {
 .navigation {
   &__links {
     margin-bottom: 70px;
-
+    @media (max-width: 768px) {
+      margin-bottom: 48px;
+    }
     .container {
       display: flex;
       justify-content: space-between;
@@ -150,7 +157,7 @@ textarea {
 
   &__link-title-contents {
     @media (max-width: 768px) {
-      margin: 20px 0;
+      margin: 15px 0;
     }
   }
 
