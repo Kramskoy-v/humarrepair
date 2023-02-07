@@ -12,23 +12,37 @@
       justify-content: end;
     }
 
+    &__title-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 7px;
+    }
+
     &__title {
-      max-width: 935px;
-      margin: 0 0 7px auto;
+      width: 770px;
+      margin-right: 48px;
       font-size: 110px;
       line-height: 132px;
       font-weight: 900;
+      text-align: right;
       text-transform: uppercase;
     }
 
+    &__clearfix {
+      display: block;
+      width: 350px;
+    }
+
     &__left {
+      width: 755px;
       margin-right: 48px;
       text-align: right;
     }
 
     &__description {
       max-width: 656px;
-      margin-bottom: 15px;
+      margin: 0 0 15px auto;
       font-size: 50px;
       line-height: 60px;
       font-weight: 300;
@@ -56,7 +70,7 @@
     }
 
     &__right {
-      max-width: 350px;
+      width: 350px;
       padding-top: 17px;
 
       > p {
@@ -93,22 +107,25 @@
   .reviews {
     .container {
       padding-bottom: 40px;
-    }
-
+       }
     &__list {
-      margin: 0 -27.5px 0;
-      display: flex;
-      justify-content: space-between;
 
-      a {
+      column-count: 3;
+      orphans: 1;
+      widows: 1;
+      margin: 0 -13px 0 -27px;
+     a {
+        display: inline-block;
         min-width: 350px;
         width: 350px;
-        display: flex;
-        margin: 0 27.5px 30px;
+        word-wrap: break-word;
+        margin: 0 27px 30px;
         box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
 
         img {
-          max-width: 100%;
+          display: block;
+          height: 100%;
+          margin: 0;
         }
       }
     }
@@ -134,6 +151,7 @@
 
   .fslightbox-container {
     z-index: 99 !important;
+
   }
 
   .fslightbox-slide-btn-container-next {
@@ -153,18 +171,13 @@
     > div {
       overflow-y: auto !important;;
       height: 730px;
-      background-color: #000000;
 
       img {
         width: 460px !important;
         height: max-content !important;
+        display: block;
+        margin: 0;
       }
-    }
-  }
-
-  .fslightbox-toolbar-button {
-    svg {
-      pointer-events: none;
     }
   }
 
